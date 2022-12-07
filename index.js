@@ -13,7 +13,7 @@ const endp = document.getElementById("endParagraph")
 const contentH2 = document.getElementById("contentTitle")
 const h1 = document.getElementById("h1")
 
-record.innerHTML = 3;
+
 let currentQuestionIndex = 0;
 let currentScore = 0;
 
@@ -177,10 +177,6 @@ let currentrecord = localStorage.getItem("record");
 function setUp() {
     score.innerHTML = 0
     time.innerHTML = "30 seconds remaining"
-    if (currentrecord === undefined) {
-        record.innerHTML = 0;
-        localStorage.setItem("record", 0)
-    }
     record.innerHTML = currentrecord;
 }
 
