@@ -13,7 +13,7 @@ const endp = document.getElementById("endParagraph")
 const contentH2 = document.getElementById("contentTitle")
 const h1 = document.getElementById("h1")
 
-
+let currentrecord = 0;
 let currentQuestionIndex = 0;
 let currentScore = 0;
 
@@ -171,7 +171,7 @@ answer2.addEventListener("click", buttonClick)
 answer3.addEventListener("click", buttonClick)
 answer4.addEventListener("click", buttonClick)
 
-let currentrecord = localStorage.getItem("record");
+currentrecord = localStorage.getItem("record");
 
 
 function setUp() {
