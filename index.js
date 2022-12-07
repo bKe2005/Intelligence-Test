@@ -14,6 +14,7 @@ const contentH2 = document.getElementById("contentTitle")
 const h1 = document.getElementById("h1")
 
 let currentrecord = 0;
+record.innerHTML = 0;
 let currentQuestionIndex = 0;
 let currentScore = 0;
 
