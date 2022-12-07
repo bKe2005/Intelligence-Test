@@ -22,7 +22,7 @@ h1 {
 
 }
 
-#name {
+#name div {
     align-items: center;
     font-size: 25px;
     color: #fefcfb;
@@ -125,7 +125,7 @@ footer {
         align-items: center;
     }
 
-    #name {
+    #name div {
         align-items: center;
         font-size: 25px;
         color: #fefcfb;
@@ -237,7 +237,7 @@ footer {
         text-align: center;
     }
 
-    #name {
+    #name div {
         align-items: center;
         font-size: 25px;
         color: #fefcfb;
