@@ -262,7 +262,7 @@ function endTitle() {
             window.location.reload()
         }, 4000)
     }
-    else if (score.innerHTML === 17) {
+    else if (score.innerHTML = 17) {
         h1.style.marginTop = "15%"
         parText = ["Congratulations. You really got score ", score.innerHTML, ", feels amazing?? It should cuz you're obstinate.. Wow. Thanks for playing and hopefully enjoying. You beat me. "]
         endp.innerHTML = parText.join(' ')
