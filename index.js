@@ -14,7 +14,6 @@ const contentH2 = document.getElementById("contentTitle")
 const h1 = document.getElementById("h1")
 
 let currentrecord = 0;
-record.innerHTML = 0;
 let currentQuestionIndex = 0;
 let currentScore = 0;
 
@@ -178,6 +177,7 @@ currentrecord = localStorage.getItem("record");
 function setUp() {
     score.innerHTML = 0
     time.innerHTML = "30 seconds remaining"
+    record.innerHTML = 0;
     record.innerHTML = currentrecord;
 }
 
@@ -257,6 +257,14 @@ function endTitle() {
     else if (score.innerHTML < record.innerHTML) {
         h1.style.marginTop = "15%"
         parText = ["Your score is ", score.innerHTML, "but, the record is", currentrecord, ",better luck next time!!"]
+        endp.innerHTML = parText.join(' ')
+        setTimeout(() => {
+            window.location.reload()
+        }, 4000)
+    }
+    else if (score.innerHTML === 17) {
+        h1.style.marginTop = "15%"
+        parText = ["Congratulations. You really got score ", score.innerHTML, ", feels amazing?? It should cuz you're obstinate.. Wow. Thanks for playing and hopefully enjoying. You beat me. "]
         endp.innerHTML = parText.join(' ')
         setTimeout(() => {
             window.location.reload()
