@@ -22,13 +22,6 @@ h1 {
 
 }
 
-#name div {
-    align-items: center;
-    font-size: 25px;
-    color: #fefcfb;
-    font-family: 'Raleway', sans-serif;
-}
-
 button {
     background: transparent;
     padding: 4% 15%;
@@ -123,13 +116,6 @@ footer {
         margin-top: 5%;
         margin-bottom: 3%;
         align-items: center;
-    }
-
-    #name div {
-        align-items: center;
-        font-size: 25px;
-        color: #fefcfb;
-        font-family: 'Raleway', sans-serif;
     }
 
     button {
@@ -237,12 +223,6 @@ footer {
         text-align: center;
     }
 
-    #name div {
-        align-items: center;
-        font-size: 25px;
-        color: #fefcfb;
-        font-family: 'Raleway', sans-serif;
-    }
 
     button {
         background: transparent;
