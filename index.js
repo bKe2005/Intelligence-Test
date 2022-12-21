@@ -276,45 +276,6 @@ function startbtn() {
             }, 1000)
         }
     }
-
-    function endTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Woooow"
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", easyquestions.lenght, ". Good job, you've beaten this level!!"]
-        endp.innerHTML = parText.join(' ')
-        timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
-        timep.innerHTML = timeText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
-    }
-    function endTimeTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Your time is up!!"
-
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", easyquestions.length, ". Good job, but not good enough :("]
-        endp.innerHTML = parText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
-    }
-
     answer1.addEventListener("click", buttonClick)
     answer2.addEventListener("click", buttonClick)
     answer3.addEventListener("click", buttonClick)
@@ -409,43 +370,6 @@ function startbtn1() {
                 wrongAnswer();
             }, 1000)
         }
-    }
-    function endTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Woooow"
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", mediumquestions.length, ". Good job, you've beaten this level!!"]
-        endp.innerHTML = parText.join(' ')
-        timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
-        timep.innerHTML = timeText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
-    }
-    function endTimeTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Your time is up!!"
-
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", mediumquestions.length, ". Good job, but not good enough :("]
-        endp.innerHTML = parText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
     }
 
     answer1.addEventListener("click", buttonClick1)
@@ -544,43 +468,6 @@ function startbtn2() {
             }, 1000)
         }
     }
-    function endTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Woooow"
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", hardquestions.length, ". Good job, you've beaten this level!!"]
-        endp.innerHTML = parText.join(' ')
-        timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
-        timep.innerHTML = timeText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
-    }
-    function endTimeTitle() {
-        pitanje.style.visibility = "hidden"
-        answer1.style.visibility = "hidden"
-        answer2.style.visibility = "hidden"
-        answer3.style.visibility = "hidden"
-        answer4.style.visibility = "hidden"
-        footer.style.visibility = "hidden"
-        content.style.visibility = "visible"
-
-        contentH2.innerHTML = "Your time is up!!"
-
-        h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/", hardquestions.length, ". Good job, but not good enough :("]
-        endp.innerHTML = parText.join(' ')
-        setTimeout(() => {
-            window.location.reload()
-        }, 2000)
-    }
 
     answer1.addEventListener("click", buttonClick2)
     answer2.addEventListener("click", buttonClick2)
@@ -621,6 +508,26 @@ function endTimeTitle() {
     h1.style.marginTop = "15%"
     parText = ["You scored", score.innerHTML, "/10. Good job, but not good enough :("]
     endp.innerHTML = parText.join(' ')
+    setTimeout(() => {
+        window.location.reload()
+    }, 2000)
+
+}
+function endTitle() {
+    pitanje.style.visibility = "hidden"
+    answer1.style.visibility = "hidden"
+    answer2.style.visibility = "hidden"
+    answer3.style.visibility = "hidden"
+    answer4.style.visibility = "hidden"
+    footer.style.visibility = "hidden"
+    content.style.visibility = "visible"
+
+    contentH2.innerHTML = "Woooow"
+    h1.style.marginTop = "15%"
+    parText = ["You scored", score.innerHTML, "/10. Good job, you've beaten this level!!"]
+    endp.innerHTML = parText.join(' ')
+    timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
+    timep.innerHTML = timeText.join(' ')
     setTimeout(() => {
         window.location.reload()
     }, 2000)
