@@ -288,7 +288,7 @@ function startbtn() {
 
         contentH2.innerHTML = "Woooow"
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, easyquestions.lenght, ". Good job, you've beaten this level!!"]
+        parText = ["You scored", score.innerHTML, "/", easyquestions.lenght, ". Good job, you've beaten this level!!"]
         endp.innerHTML = parText.join(' ')
         timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
         timep.innerHTML = timeText.join(' ')
@@ -308,7 +308,7 @@ function startbtn() {
         contentH2.innerHTML = "Your time is up!!"
 
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, easyquestions.length, ". Good job, but not good enough :("]
+        parText = ["You scored", score.innerHTML, "/", easyquestions.length, ". Good job, but not good enough :("]
         endp.innerHTML = parText.join(' ')
         setTimeout(() => {
             window.location.reload()
@@ -421,7 +421,7 @@ function startbtn1() {
 
         contentH2.innerHTML = "Woooow"
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, mediumquestions.length, ". Good job, you've beaten this level!!"]
+        parText = ["You scored", score.innerHTML, "/", mediumquestions.length, ". Good job, you've beaten this level!!"]
         endp.innerHTML = parText.join(' ')
         timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
         timep.innerHTML = timeText.join(' ')
@@ -441,7 +441,7 @@ function startbtn1() {
         contentH2.innerHTML = "Your time is up!!"
 
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, mediumquestions.length, ". Good job, but not good enough :("]
+        parText = ["You scored", score.innerHTML, "/", mediumquestions.length, ". Good job, but not good enough :("]
         endp.innerHTML = parText.join(' ')
         setTimeout(() => {
             window.location.reload()
@@ -555,7 +555,7 @@ function startbtn2() {
 
         contentH2.innerHTML = "Woooow"
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, hardquestions.length, ". Good job, you've beaten this level!!"]
+        parText = ["You scored", score.innerHTML, "/", hardquestions.length, ". Good job, you've beaten this level!!"]
         endp.innerHTML = parText.join(' ')
         timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
         timep.innerHTML = timeText.join(' ')
@@ -575,7 +575,7 @@ function startbtn2() {
         contentH2.innerHTML = "Your time is up!!"
 
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, hardquestions.length, ". Good job, but not good enough :("]
+        parText = ["You scored", score.innerHTML, "/", hardquestions.length, ". Good job, but not good enough :("]
         endp.innerHTML = parText.join(' ')
         setTimeout(() => {
             window.location.reload()
