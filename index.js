@@ -149,9 +149,9 @@ const hardquestions = [
         otherAnswers: ["Wrestling", "Running", "  Swimming", "Archery"]
     },
     pitanje5 = {
-        title: "What is average brain weight? ",
-        correctAnswer: "1,25-1,5",
-        otherAnswers: ["1,25-1,5", "1,1-1,7", "1-2", "2,1-2,5"]
+        title: "How many bones are in an elephants trunk?",
+        correctAnswer: "0",
+        otherAnswers: ["0", "2", "25", "38"]
     },
     pitanje6 = {
         title: "Song informer was released in ____ ",
