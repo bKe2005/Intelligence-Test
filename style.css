@@ -49,10 +49,10 @@ button {
 
 
 .answers {
+    margin-left: 40px;
     text-align: center;
     padding: 3% 16%;
     width: 80%;
-    margin-left: 40px;
     margin-right: auto;
     align-items: center;
     margin-top: 10px;
@@ -168,6 +168,7 @@ footer {
     }
 
     .answers {
+        margin-left: 0;
         padding: 3% 16%;
         width: 100%;
         margin-top: 6px;
