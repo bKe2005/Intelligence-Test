@@ -149,9 +149,9 @@ const hardquestions = [
         otherAnswers: ["Wrestling", "Running", "  Swimming", "Archery"]
     },
     pitanje5 = {
-        title: "How many bones are in an elephants trunk?",
-        correctAnswer: "0",
-        otherAnswers: ["0", "2", "25", "38"]
+        title: "What is average brain weight? ",
+        correctAnswer: "1,25-1,5",
+        otherAnswers: ["1,25-1,5", "1,1-1,7", "1-2", "2,1-2,5"]
     },
     pitanje6 = {
         title: "Song informer was released in ____ ",
@@ -203,7 +203,7 @@ function startbtn() {
         niz.push(num)
     }
 
-    h1.style.marginTop = "5%"
+    h1.style.marginTop = "10%"
     answer1.style.visibility = "visible"
     answer2.style.visibility = "visible"
     answer3.style.visibility = "visible"
@@ -267,6 +267,8 @@ function startbtn() {
             }, 1000)
 
         }
+
+
         else {
             event.target.style.boxShadow = "1px 1px 66px 8px rgba(255, 51, 51)";
             setTimeout(() => {
@@ -274,6 +276,7 @@ function startbtn() {
             }, 1000)
         }
     }
+
     function endTitle() {
         pitanje.style.visibility = "hidden"
         answer1.style.visibility = "hidden"
@@ -285,7 +288,7 @@ function startbtn() {
 
         contentH2.innerHTML = "Woooow"
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/10. Good job, you've beaten this level!!"]
+        parText = ["You scored", score.innerHTML, easyquestions.length, ". Good job, you've beaten this level!!"]
         endp.innerHTML = parText.join(' ')
         timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
         timep.innerHTML = timeText.join(' ')
@@ -293,7 +296,6 @@ function startbtn() {
             window.location.reload()
         }, 2000)
     }
-
     answer1.addEventListener("click", buttonClick)
     answer2.addEventListener("click", buttonClick)
     answer3.addEventListener("click", buttonClick)
@@ -317,7 +319,7 @@ function startbtn1() {
         niz1.push(num)
     }
 
-    h1.style.marginTop = "5%"
+    h1.style.marginTop = "10%"
     answer1.style.visibility = "visible"
     answer2.style.visibility = "visible"
     answer3.style.visibility = "visible"
@@ -400,7 +402,7 @@ function startbtn1() {
 
         contentH2.innerHTML = "Woooow"
         h1.style.marginTop = "15%"
-        parText = ["You scored", score.innerHTML, "/10. Good job, you've beaten this level!!"]
+        parText = ["You scored", score.innerHTML, mediumquestions.length, ". Good job, you've beaten this level!!"]
         endp.innerHTML = parText.join(' ')
         timeText = ["You finished in", 60 - timeLeft, "seconds!!"]
         timep.innerHTML = timeText.join(' ')
@@ -408,7 +410,6 @@ function startbtn1() {
             window.location.reload()
         }, 2000)
     }
-
     answer1.addEventListener("click", buttonClick1)
     answer2.addEventListener("click", buttonClick1)
     answer3.addEventListener("click", buttonClick1)
@@ -433,7 +434,7 @@ function startbtn2() {
         niz2.push(num)
     }
 
-    h1.style.marginTop = "5%"
+    h1.style.marginTop = "10%"
     answer1.style.visibility = "visible"
     answer2.style.visibility = "visible"
     answer3.style.visibility = "visible"
@@ -505,7 +506,6 @@ function startbtn2() {
             }, 1000)
         }
     }
-
     function endTitle() {
         pitanje.style.visibility = "hidden"
         answer1.style.visibility = "hidden"
@@ -525,7 +525,6 @@ function startbtn2() {
             window.location.reload()
         }, 2000)
     }
-
     answer1.addEventListener("click", buttonClick2)
     answer2.addEventListener("click", buttonClick2)
     answer3.addEventListener("click", buttonClick2)
