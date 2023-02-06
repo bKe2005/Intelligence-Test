@@ -109,7 +109,7 @@ const easyquestions = [
     pitanje7 = {
         title: "Who led an expedition to prove that the Earth is round?",
         correctAnswer: "Ferdinand Magellan",
-        otherAnswers: ["Ferdinand Magellan", "Nermedin Salakovic", "Christopher Columbus", "Amerigo Vespucci"]
+        otherAnswers: ["Ferdinand Magellan", "Vascp da Gama", "Christopher Columbus", "Amerigo Vespucci"]
     },
     pitanje8 = {
         title: "What year was Adolf Hitler born?",
@@ -303,7 +303,7 @@ function startbtn() {
         footer.style.visibility = "hidden"
         content.style.visibility = "visible"
 
-        contentH2.innerHTML = "Woooow"
+        contentH2.innerHTML = "Results"
         h1.style.marginTop = "15%"
         parText = ["You scored", score.innerHTML, "/", easyquestions.length, "."]
         endp.innerHTML = parText.join(' ')
@@ -311,11 +311,11 @@ function startbtn() {
             timeText = ["Your intellingence is sadly below average :("]
             timep.innerHTML = timeText.join(' ')
         }
-        else if (score.innerHTML > 11) {
+        else if (score.innerHTML < 21) {
             timeText = ["Your intelligence is average. Good for you.."]
             timep.innerHTML = timeText.join(' ')
         }
-        else if (score.innerHTML > 21) {
+        else {
             timeText = ["AMAZING... You have above average intelligence!!!"]
             timep.innerHTML = timeText.join(' ')
         }
