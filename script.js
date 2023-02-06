@@ -256,6 +256,10 @@ function startbtn() {
             score.innerHTML = currentScore += 1
             endTimeTitle()
         }
+        if (answer === pitanje_10.otherAnswers) {
+            score.innerHTML = currentScore
+            endTimeTitle()
+        }
 
         if (answer === question.correctAnswer) {
             event.target.style.boxShadow = "1px 1px 66px 8px rgba(16,237,53,0.82)";
