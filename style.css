@@ -12,6 +12,22 @@ h1 {
     font-weight: 600;
 }
 
+#startpa {
+    color: aliceblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+#pocetak {
+    justify-content: center;
+}
+
 
 
 button {
@@ -62,18 +78,12 @@ button {
 
 #startButtom {
     padding: 4% 20%;
-    width: 100%;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+
 }
 
-#startButtom1 {
-    padding: 4% 20%;
-    width: 100%;
-}
-
-#startButtom2 {
-    padding: 4% 20%;
-    width: 100%;
-}
 
 
 button:hover {
@@ -134,8 +144,33 @@ footer {
 
     h1 {
         margin-top: 20%;
-        font-size: 250%;
+        font-size: 235%;
         align-items: center;
+    }
+
+    #startButtom {
+        flex-wrap: wrap;
+        background: transparent;
+        padding: 3% 10%;
+        color: #fefcfb;
+        border-color: #fefcfb;
+        align-items: center;
+        align-self: center;
+        border-radius: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #startpa {
+        color: aliceblue;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25px;
+        font-size: 15px;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
     }
 
 
@@ -177,21 +212,6 @@ footer {
     #startq {
         display: flex;
         flex-direction: column;
-    }
-
-    #startButtom {
-        padding: 4% 20%;
-        width: 100%;
-    }
-
-    #startButtom1 {
-        padding: 4% 20%;
-        width: 100%;
-    }
-
-    #startButtom2 {
-        padding: 4% 20%;
-        width: 100%;
     }
 
     button:hover {
@@ -298,20 +318,6 @@ footer {
         flex-direction: column;
     }
 
-    #startButtom {
-        padding: 4% 20%;
-        width: 60%;
-    }
-
-    #startButtom1 {
-        padding: 4% 20%;
-        width: 60%;
-    }
-
-    #startButtom2 {
-        padding: 4% 20%;
-        width: 60%;
-    }
 
 
     button:hover {
