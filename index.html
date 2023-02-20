@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intelligence Test</title>
+    <title>Quiz</title>
     <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body id="body">
-    <h1 id="h1">Intelligence Test</h1>
-    <div id="question">Start</div>
+    <h1 id="h1">Quiz</h1>
+    <div id="question">Da li znaš osnove arapskog?</div>
 
     <div class="container" id="pocetak">
         <div class="row" id="startq">
-            <div class="col" id="sbut"><button class="col" id="startButtom">Test Your Intelligence</button></div>
+            <button class="col" id="startbtn">Započni qviz</button>
         </div>
-        <p id="startpa">This is General Intelligence Test, so you can test your intelligence level. Questions get
-            progressively
-            harder. Enyoj!!<br>
-        </p>
     </div>
-
 
 
     <div id="content">
@@ -51,18 +49,19 @@
         </div>
     </div>
 
+    <div class="container" id="pocetak">
+        <div class="row" id="startq">
+            <button class="col" id="nextButtom">Sljedeće Pitanje</button>
+        </div>
+    </div>
+
+
     <footer id="footer">
         <div class="row">
             <div class="col">
                 Score
                 <div id="score">
                     "score"
-                </div>
-            </div>
-            <div class="col">
-                Time
-                <div id="time">
-                    "time"
                 </div>
             </div>
         </div>
