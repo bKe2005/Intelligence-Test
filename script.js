@@ -81,6 +81,11 @@ const easyquestions = [
         correctAnswer: "مشى",
         otherAnswers: ["قرأ", "مشى", "قال", "وجد"]
     },
+    pitanje13 = {
+        title: "كلبه znači...",
+        correctAnswer: "Njegov pas",
+        otherAnswers: ["Njegov pas", "Njen pas", "Moj pas", "Naš pas"]
+    },
     pitanje11 = {
         title: "Imenica se sa pridjevom slaže u...",
         correctAnswer: "Rodu, broju, padežu i određenosti",
@@ -101,10 +106,20 @@ const easyquestions = [
         correctAnswer: "الطالبَ",
         otherAnswers: ["الطالبَ", "الطالبِ", "الطالبًا", "الطالبُ"]
     },
+    pitanje8 = {
+        title: " .... أَللهُ خَلَقَ السَّمَاوَاتِ وَ",
+        correctAnswer: "الأَرْضَ",
+        otherAnswers: ["الأَرْضَ", "الأَرْضِ", "الأَرْضْ", "الأَرْضُ"]
+    },
+    pitanje9 = {
+        title: "Ako su knjige skupe kazat ćemo: ",
+        correctAnswer: "اَلْكُتُبُ غَاليَةٌ",
+        otherAnswers: ["اَلْكُتُبُ غَاليَةٌ", "اَلْكُتُبُ غَاليِ", "اَلْكُتُبُ غَالٍ", "اَلْكُتُبُ غَالياتٌ"]
+    },
     pitanje13 = {
-        title: "كلبه znači...",
-        correctAnswer: "Njegov pas",
-        otherAnswers: ["Njegov pas", "Njen pas", "Moj pas", "Naš pas"]
+        title: "Abdulaha ćemo pravilno dozvati: ",
+        correctAnswer: "ياَ عَبْدَ اللَّهِ",
+        otherAnswers: ["ياَ عَبْدَ اللَّهِ", "ياَ عَبْدَ اللَّهَ", "ياَ عَبْدُ اللَّهِ", "ياَ عَبْدِ اللَّهِ"]
     },
 ]
 
