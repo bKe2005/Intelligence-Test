@@ -22,14 +22,14 @@ let currentScore = 0;
 
 const easyquestions = [
     pitanje1 = {
-        title: "Zamjenica هما znači ",
+        title: "Lična zamjenica هما znači ",
         correctAnswer: "Njih dvojica",
-        otherAnswers: ["Njih dvojica", "On", "Mi", "Vas dvojica"]
+        otherAnswers: ["Njih dvojica", "Nas dvojica", "Mi", "Vas dvojica"]
     },
     pitanje1 = {
-        title: "Zamjenica أنا znači ",
+        title: "Lična zamjenica أنا znači ",
         correctAnswer: "Ja",
-        otherAnswers: ["Njih dvojica", "Ja", "Mi", "Njih dvije"]
+        otherAnswers: ["Ti", "Ja", "Mi", "On"]
     },
     pitanje2 = {
         title: "Koliko ima harfova u arapskom jeziku?",
@@ -37,22 +37,22 @@ const easyquestions = [
         otherAnswers: ["28", "27", "30", "31"]
     },
     pitanje14 = {
-        title: "Koliko ima vrsta glagola?",
-        correctAnswer: "10",
-        otherAnswers: ["10", "11", "12", "8"]
+        title: "Koliko ima slabih harfova u arapskom jeziku?",
+        correctAnswer: "3",
+        otherAnswers: ["3", "2", "6", "9"]
     },
     pitanje3 = {
-        title: "Šta znači riječ - نقرأ ",
+        title: "Šta znači glagol - نقرأ ",
         correctAnswer: "Mi čitamo",
-        otherAnswers: ["Mi čitamo", "Mi smo čitali", "Čitanje", "On čita"]
+        otherAnswers: ["Mi čitamo", "Mi smo čitali", "Pročitali smo", "Ona čita"]
     },
     pitanje4 = {
-        title: "Koja vrsta glagola je riječ  -  اِنْتَظَرْنَ?",
+        title: "U kojoj proširenoj vrsti glagola je riječ  -  اِنْتَظَرْنَ?",
         correctAnswer: "8.",
         otherAnswers: ["8.", "10.", "9.", "7."]
     },
     pitanje4 = {
-        title: "Koja vrsta glagola je riječ  -  قَدَّمَ?",
+        title: "Glagolska imenica  -  تَقْديِمٌ  je od glagola u kojoj proširenoj vrsti? ",
         correctAnswer: "2.",
         otherAnswers: ["6.", "2.", "4.", "7."]
     },
@@ -84,12 +84,12 @@ const easyquestions = [
     pitanje13 = {
         title: "كلبه znači...",
         correctAnswer: "Njegov pas",
-        otherAnswers: ["Njegov pas", "Njen pas", "Moj pas", "Naš pas"]
+        otherAnswers: ["Njegov pas", "On je pas", "Njegovo srce", "Srčano"]
     },
     pitanje11 = {
-        title: "Imenica se sa pridjevom slaže u...",
-        correctAnswer: "Rodu, broju, padežu i određenosti",
-        otherAnswers: ["Rodu, broju, padežu i određenosti", "Rodu i broju", "Padežu", "Ničemu"]
+        title: "Imenica se sa pridjevom ne slaže u...",
+        correctAnswer: "Padežu i obliku",
+        otherAnswers: ["Rodu, broju, padežu i određenosti", "Rodu i broju", "Padežu i obliku", "Padežu i određenosti"]
     },
     pitanje12 = {
         title: "Kako se na arapskom kaže 25?",
@@ -97,7 +97,7 @@ const easyquestions = [
         otherAnswers: ["خمسة وعشرون", "اثنان وخمسون", "اثني عشر", "خمسمائة وعشرون"]
     },
     pitanje8 = {
-        title: "كِتَابُ زَيْنَب",
+        title: "Kako ćemo pravilno kazati Zejnebina knjiga?",
         correctAnswer: "كِتَابُ زَيْنَبَ",
         otherAnswers: ["كِتَابُ زَيْنَبَ", "كِتَابُ زَيْنَبِ", "كِتَابُ زَيْنَبُ", "كِتَابُ زَيْنَبٍ"]
     },
@@ -188,21 +188,20 @@ function startbtn() {
             answer2.innerHTML = answers[niz[1]]
             answer3.innerHTML = answers[niz[2]]
             answer4.innerHTML = answers[niz[3]]
-            score.innerHTML = currentScore
-            score2 = score.innerHTML
             event.target.style.boxShadow = "none";
         }
         if (answer === question.correctAnswer) {
             event.target.style.boxShadow = "1px 1px 66px 8px rgba(16,237,53,0.82)";
             currentQuestionIndex += 1
             currentScore += 1
-            score.innerHTML = currentScore
+            score.innerHTML = Number(score.innerHTML) + 1
             nextbutton.addEventListener("click", nextq)
         }
         else {
             event.target.style.boxShadow = "1px 1px 66px 8px rgba(255, 51, 51)";
             setTimeout(() => {
                 event.target.style.boxShadow = "";
+                score.innerHTML = Number(score.innerHTML) - 1
             }, 1000)
         }
     }
