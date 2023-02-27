@@ -22,102 +22,102 @@ let currentScore = 0;
 
 const easyquestions = [
     pitanje1 = {
-        title: "Lična zamjenica هما znači ",
+        title: "1. Lična zamjenica هما znači ",
         correctAnswer: "Njih dvojica",
         otherAnswers: ["Njih dvojica", "Nas dvojica", "Mi", "Vas dvojica"]
     },
     pitanje1 = {
-        title: "Lična zamjenica أنا znači ",
+        title: "2. Lična zamjenica أنا znači ",
         correctAnswer: "Ja",
         otherAnswers: ["Ti", "Ja", "Mi", "On"]
     },
     pitanje2 = {
-        title: "Koliko ima harfova u arapskom jeziku?",
+        title: "3. Koliko ima harfova u arapskom jeziku?",
         correctAnswer: "28",
         otherAnswers: ["28", "27", "30", "31"]
     },
     pitanje14 = {
-        title: "Koliko ima slabih harfova u arapskom jeziku?",
+        title: "4. Koliko ima slabih harfova u arapskom jeziku?",
         correctAnswer: "3",
         otherAnswers: ["3", "2", "6", "9"]
     },
     pitanje3 = {
-        title: "Šta znači glagol - نقرأ ",
+        title: "5. Šta znači glagol - نقرأ ",
         correctAnswer: "Mi čitamo",
         otherAnswers: ["Mi čitamo", "Mi smo čitali", "Pročitali smo", "Ona čita"]
     },
     pitanje4 = {
-        title: "U kojoj proširenoj vrsti glagola je riječ  -  اِنْتَظَرْنَ?",
+        title: "6. U kojoj proširenoj vrsti glagola je riječ  -  اِنْتَظَرْنَ?",
         correctAnswer: "8.",
         otherAnswers: ["8.", "10.", "9.", "7."]
     },
     pitanje4 = {
-        title: "Glagolska imenica  -  تَقْديِمٌ  je od glagola u kojoj proširenoj vrsti? ",
+        title: "7. Glagolska imenica  -  تَقْديِمٌ  je od glagola u kojoj proširenoj vrsti? ",
         correctAnswer: "2.",
         otherAnswers: ["6.", "2.", "4.", "7."]
     },
     pitanje13 = {
-        title: "Jug se na arapskom kaže _____?",
+        title: "8. Jug se na arapskom kaže _____?",
         correctAnswer: "جنوب",
         otherAnswers: ["جنوب", "غرب", "شرق", "شمال"]
     },
     pitanje5 = {
-        title: "Kako se kaže 'crven' na arapskom?",
+        title: "9. Kako se kaže 'crven' na arapskom?",
         correctAnswer: "أحمر",
         otherAnswers: ["أحمر", "حمراء", "أزرق", "أسود"]
     },
     pitanje6 = {
-        title: "Koji od ovih pridjeva je u superlativu?",
-        correctAnswer: "الاُسْرَعَ",
-        otherAnswers: ["الاُسْرَعَ", "أَكْبَرُ مِنْ", "سَرِيعَ", "كَبِير"]
+        title: "10. Koji od ovih pridjeva je u superlativu?",
+        correctAnswer: "الاُسْرَعُ",
+        otherAnswers: ["الاُسْرَعُ", "أَكْبَرُ مِنْ", "سَرِيعٌ", "كَبِيرٌ"]
     },
     pitanje7 = {
-        title: "Koje zanimanje je حَكَم?",
+        title: "11. Koje zanimanje je حَكَم?",
         correctAnswer: "Sudija",
         otherAnswers: ["Sudija", "Golman", "Igrač", "Komentator"]
     },
     pitanje10 = {
-        title: "Koji od ovih glagola je nakis?",
+        title: "12. Koji od ovih glagola je nakis?",
         correctAnswer: "مشى",
         otherAnswers: ["قرأ", "مشى", "قال", "وجد"]
     },
     pitanje13 = {
-        title: "كلبه znači...",
+        title: "13. كلبه znači...",
         correctAnswer: "Njegov pas",
         otherAnswers: ["Njegov pas", "On je pas", "Njegovo srce", "Srčano"]
     },
     pitanje11 = {
-        title: "Imenica se sa pridjevom ne slaže u...",
+        title: "14. Imenica se sa pridjevom ne slaže u...",
         correctAnswer: "Padežu i obliku",
         otherAnswers: ["Rodu, broju, padežu i određenosti", "Rodu i broju", "Padežu i obliku", "Padežu i određenosti"]
     },
     pitanje12 = {
-        title: "Kako se na arapskom kaže 25?",
+        title: "15. Kako se na arapskom kaže 25?",
         correctAnswer: "خمسة وعشرون",
         otherAnswers: ["خمسة وعشرون", "اثنان وخمسون", "اثني عشر", "خمسمائة وعشرون"]
     },
     pitanje8 = {
-        title: "Kako ćemo pravilno kazati Zejnebina knjiga?",
+        title: "16. Kako ćemo pravilno kazati Zejnebina knjiga?",
         correctAnswer: "كِتَابُ زَيْنَبَ",
         otherAnswers: ["كِتَابُ زَيْنَبَ", "كِتَابُ زَيْنَبِ", "كِتَابُ زَيْنَبُ", "كِتَابُ زَيْنَبٍ"]
     },
     pitanje9 = {
-        title: "إنّ هذا ـــــــــ جديدٌ",
+        title: "17. إنّ هذا ـــــــــ جديدٌ",
         correctAnswer: "الطالبَ",
         otherAnswers: ["الطالبَ", "الطالبِ", "الطالبًا", "الطالبُ"]
     },
     pitanje8 = {
-        title: " .... أَللهُ خَلَقَ السَّمَاوَاتِ وَ",
+        title: "18. .... أَللهُ خَلَقَ السَّمَاوَاتِ وَ",
         correctAnswer: "الأَرْضَ",
         otherAnswers: ["الأَرْضَ", "الأَرْضِ", "الأَرْضْ", "الأَرْضُ"]
     },
     pitanje9 = {
-        title: "Ako su knjige skupe kazat ćemo: ",
+        title: "19. Ako su knjige skupe kazat ćemo: ",
         correctAnswer: "اَلْكُتُبُ غَاليَةٌ",
         otherAnswers: ["اَلْكُتُبُ غَاليَةٌ", "اَلْكُتُبُ غَاليِ", "اَلْكُتُبُ غَالٍ", "اَلْكُتُبُ غَالياتٌ"]
     },
     pitanje13 = {
-        title: "Abdulaha ćemo pravilno dozvati: ",
+        title: "20. Abdulaha ćemo pravilno dozvati: ",
         correctAnswer: "ياَ عَبْدَ اللَّهِ",
         otherAnswers: ["ياَ عَبْدَ اللَّهِ", "ياَ عَبْدَ اللَّهَ", "ياَ عَبْدُ اللَّهِ", "ياَ عَبْدِ اللَّهِ"]
     },
